@@ -1,0 +1,115 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f8f2;
+  color: #20352a;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 8%;
+  background: white;
+  border-bottom: 1px solid #e3e9df;
+}
+
+.navbar h2 {
+  margin: 0;
+  color: #237447;
+}
+
+.navbar span {
+  color: #66756a;
+  font-size: 14px;
+}
+
+.hero {
+  max-width: 850px;
+  margin: 75px auto;
+  padding: 0 24px;
+  text-align: center;
+}
+
+.eyebrow {
+  color: #237447;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+
+.hero h1 {
+  font-size: clamp(36px, 6vw, 60px);
+  line-height: 1.1;
+  margin: 20px 0;
+}
+
+.description {
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.8;
+  color: #66756a;
+}
+
+.status-card {
+  margin: 36px auto 20px;
+  max-width: 430px;
+  padding: 24px;
+  background: white;
+  border: 1px solid #e0e8dc;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px #20352a0a;
+}
+
+.status-card h3 {
+  margin-top: 0;
+}
+
+.success {
+  color: #168348;
+}
+
+.error {
+  color: #c0392b;
+}
+
+.actions button {
+  padding: 13px 22px;
+  border: none;
+  border-radius: 8px;
+  background: #237447;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.actions button:hover {
+  background: #185a34;
+}
+
+footer {
+  padding: 24px;
+  text-align: center;
+  color: #778477;
+  font-size: 13px;
+}
+
+@media (max-width: 550px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .hero {
+    margin-top: 45px;
+  }
+}
