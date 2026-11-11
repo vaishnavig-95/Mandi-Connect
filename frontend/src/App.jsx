@@ -1,9 +1,9 @@
 
 import { useEffect, useState } from 'react';
-
+const API_BASE = import.meta.env.VITE_API_URL || '';
 const api = async (path, opts = {}) => {
   const token = localStorage.getItem('token');
-  const res = await fetch('/api' + path, {
+  const res = await fetch(`${API_BASE}/api${path}`, {
     ...opts,
     headers: {
       'Content-Type': 'application/json',
